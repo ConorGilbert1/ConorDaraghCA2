@@ -8,9 +8,20 @@
     
 }
 
+html,
+body {
+ height: 100%;
+ margin: 0;
+}
 
 .main-container{
  @include flexColumnCenter;
  min-width: 100%;
+ min-height: 100%;
 
+}
+
+
+.welcome-container{
+ flex-grow: 1;
 }
