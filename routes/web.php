@@ -20,4 +20,8 @@ Route::get('/', function () {
 Route::get('/movies', function () {
     return view('movies');
 });
+Route::get('/reviews', function () {
+    return view('reviews');
+});
 Route::get('/movies', [MoviesController::class, 'index'])->name('Movies.index');
+Route::get('/movies/{id}', [ReviewsController::class, 'show'])->name('reviews');

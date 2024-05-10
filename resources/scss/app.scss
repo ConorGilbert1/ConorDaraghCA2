@@ -1,10 +1,10 @@
 @import 'config';
 @import 'nav';
-
+@import 'movies';
 
 *{
  @include removePaddingMargin;
- background-color: $primary-color;
+    
 }
 
 
