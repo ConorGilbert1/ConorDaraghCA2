@@ -5,7 +5,7 @@
    align-items: center;
    background-color: #f5ebeb;
    color: #fff;
-   padding: 8px 20px; // Reduced padding for shorter height
+   padding: 8px 20px; 
  
    .nav-left-container {
      display: flex;
@@ -39,7 +39,7 @@
    .login-button {
      background-color: #007bff;
      border-radius: 5px;
-     padding: 12px 25px; // Adjusted padding for larger button size
+     padding: 12px 25px; 
      font-size: 18px;
  
      &:hover {
@@ -58,9 +58,9 @@
 
 
  .nav-centre-container {
-   width: 9%;
+   
 .logo {
-      width: 150px; // Increased width for wider image
+      width: 150px; 
       height: 100PX;
       margin-right: 20px;
    }

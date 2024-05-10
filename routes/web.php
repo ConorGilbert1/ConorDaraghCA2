@@ -23,5 +23,12 @@ Route::get('/movies', function () {
 Route::get('/reviews', function () {
     return view('reviews');
 });
+Route::get('/login', function () {
+    return view('login');
+});
+Route::get('/register', function () {
+    return view('register');
+});
+
 Route::get('/movies', [MoviesController::class, 'index'])->name('Movies.index');
 Route::get('/movies/{id}', [ReviewsController::class, 'show'])->name('reviews');

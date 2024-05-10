@@ -20,7 +20,7 @@
                 <p><strong>Director:</strong> {{ $movie->director }}</p>
                 <p><strong>Runtime:</strong> {{ $movie->duration }} minutes</p>
                 <p><strong>Rating:</strong> {{ $movie->overall_rating }}</p>
-                <p><a href="{{ route('reviews', ['id' => $movie->id]) }}">View Reviews</a></p>
+                <p><a href="">View Reviews</a></p>
             </div>
             @endforeach
         </div>

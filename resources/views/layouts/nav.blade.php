@@ -12,8 +12,8 @@
 
   <div class="nav-right-container">
     <ul>
-      <li><a href="/Login" class="login-button">Login</a></li>
-      <li><a href="/Register" class="login-button">Register</a></li>
+      <li><a href="/login" class="login-button">Login</a></li>
+      <li><a href="/register" class="login-button">Register</a></li>
     </ul>
   </div>
 </div>
