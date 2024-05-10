@@ -16,7 +16,7 @@
                 <th>Director</th>
                 <th>Runtime</th>
                 <th>Rating</th>
-                
+                <th>Action</th>
             </tr>
         </thead>
         <tbody>
@@ -27,7 +27,9 @@
                 <td>{{ $movie->director }}</td>
                 <td>{{ $movie->duration }} minutes</td>
                 <td>{{ $movie->overall_rating }}</td>
-                
+                <td>
+                    <a href="{{ route('reviews', ['id' => $movie->id]) }}">View Reviews</a>
+                </td>
             </tr>
             @endforeach
         </tbody>

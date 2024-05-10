@@ -17,5 +17,10 @@ class MoviesController extends Controller
         $movies = Movies::all();
         return view('movies')->with('movies', $movies);
     }
-   
+    public function show($id)
+    {
+        
+        $movie = Movies::find($id);
+        return view('reviews', compact('movie'));
+    }
 }
