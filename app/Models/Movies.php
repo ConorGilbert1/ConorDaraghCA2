@@ -9,5 +9,5 @@ class Movies extends Model
 {
     use HasFactory;
     protected $table = 'movies';
-    protected $fillable = ['movie_name', 'release_date', 'director', 'duration','overall_rating'];
+    protected $fillable = ['title', 'release_date', 'director', 'duration','overall_rating'];
 }
