@@ -20,7 +20,6 @@ return new class extends Migration
             $table->string('director');
             $table->integer('duration');
             $table->float('overall_rating');
-
         });
     }
 

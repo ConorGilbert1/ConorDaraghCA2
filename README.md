@@ -15,3 +15,9 @@ php artisan key:generate
 npm run dev
 
 php artisan serve
+
+//DB related commands:
+
+php artisan migrate
+php artisan migrate:refresh
+php artisan db:seed
