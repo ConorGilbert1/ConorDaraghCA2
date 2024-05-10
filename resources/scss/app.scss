@@ -1,0 +1,10 @@
+@import 'config';
+@import 'nav';
+
+
+*{
+ @include removePaddingMargin;
+ background-color: $primary-color;
+}
+
+

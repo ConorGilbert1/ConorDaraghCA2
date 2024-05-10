@@ -1,7 +1,44 @@
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
-
-.container {
-    background-color: blueviolet;
+.nav-container {
+  background-color: #2c4faf;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  justify-content: space-evenly;
 }
+
+.nav-left-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  background-color: #2c4faf;
+}
+.nav-left-container ul {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  list-style-type: none;
+  text-decoration: none;
+}
+.nav-left-container ul a {
+  text-decoration: none;
+  color: white;
+  background-color: #2c4faf;
+}
+
+.nav-center-container {
+  background-color: #2c4faf;
+}
+
+.nav-right-container {
+  background-color: #2c4faf;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  background-color: #282828;
+}/*# sourceMappingURL=app.css.map */

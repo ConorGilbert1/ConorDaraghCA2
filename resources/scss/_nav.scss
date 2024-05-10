@@ -1,0 +1,32 @@
+.nav-container {
+ background-color: $nav-color;
+ @include flexRowCenter;
+ justify-content: space-evenly;
+}
+
+.nav-left-container{
+ @include flexRowCenter;
+ background-color: $nav-color;
+ ul{
+    @include flexRowCenter;
+    color: white;
+    list-style-type: none;
+    text-decoration: none;
+
+    a{
+     text-decoration: none;
+     color: white;
+     background-color: $nav-color;
+    }
+ }
+}
+
+
+.nav-center-container {
+ background-color: $nav-color;
+}
+
+
+.nav-right-container {
+ background-color: $nav-color;
+}

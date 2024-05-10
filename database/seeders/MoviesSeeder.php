@@ -50,7 +50,7 @@ class MoviesSeeder extends Seeder
                 'duration' => 136,
                 'overall_rating' => 8.7,
             ],
-           
+
         ];
     }
 }

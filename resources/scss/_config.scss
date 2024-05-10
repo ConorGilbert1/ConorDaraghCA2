@@ -1,0 +1,66 @@
+//Main Colors
+$primary-color: #282828;
+$accent-color: #00ace9;
+$button-hover-color: #303030;
+$review-color: #ffffff;
+
+//Home Colors
+$content-color1: #A9EFEE;
+$content-color2: #0000EE;
+$content-color3: #dd911e;
+
+//Nav Colors
+$nav-color: #2c4faf;
+$nav-link-color: #2c4faf;
+
+
+//Sizes
+$mobile: 500px;
+$tablet-min: 500px;
+$tablet-max: 1000px;
+
+
+//Mixins
+@mixin homeContentSettings {
+ display: flex;
+ flex-direction: row;
+ justify-content: center;
+ align-items: center;
+ margin-top: 100px;
+}
+
+@mixin flexColumnCenter {
+ display: flex;
+ flex-direction: column;
+ justify-content: center;
+ align-items: center;
+}
+
+@mixin flexRowCenter {
+ display: flex;
+ flex-direction: row;
+ justify-content: center;
+ align-items: center;
+}
+
+@mixin removePaddingMargin {
+ padding: 0;
+ margin: 0;
+}
+
+@mixin hoverTransition {
+ transform-style: flat;
+ transition-duration: .5s;
+}
+
+@mixin mobile {
+ @media (max-width: $mobile) {
+  @content;
+ }
+}
+
+@mixin tablet {
+ @media (min-width: $tablet-min) and (max-width:$tablet-max) {
+  @content;
+ }
+}
