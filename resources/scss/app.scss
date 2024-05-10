@@ -1,6 +1,7 @@
 @import 'config';
 @import 'nav';
 @import 'movies';
+@import 'footer';
 
 *{
  @include removePaddingMargin;
@@ -8,3 +9,8 @@
 }
 
 
+.main-container{
+ @include flexColumnCenter;
+ min-width: 100%;
+
+}

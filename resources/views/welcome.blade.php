@@ -12,7 +12,7 @@
 </head>
 
 <body>
-    @include('layouts.app')
+    @include('layouts.nav')
 
     <div class="container">
         <h1>Welcome to Your Website</h1>
@@ -20,7 +20,7 @@
         <p>Nulla facilisi. Vivamus vehicula, ex at vestibulum tincidunt, justo lorem pellentesque nunc, id suscipit risus neque a turpis.</p>
     </div>
 
-    
+    @include('layouts.footer')
 </body>
 
 </html>

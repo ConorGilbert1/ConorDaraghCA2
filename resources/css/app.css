@@ -1,4 +1,5 @@
 .nav-container {
+  width: 100%;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -9,11 +10,6 @@
 .nav-container .nav-left-container {
   display: flex;
   align-items: center;
-}
-.nav-container .nav-left-container .logo {
-  width: 150px;
-  height: 50PX;
-  margin-right: 20px;
 }
 .nav-container ul {
   list-style-type: none;
@@ -48,19 +44,31 @@
   display: flex;
   align-items: center;
 }
+.nav-container .nav-centre-container {
+  width: 9%;
+}
+.nav-container .nav-centre-container .logo {
+  width: 150px;
+  height: 100PX;
+  margin-right: 20px;
+}
 
 .movie-container {
-  display: flex;
+  margin-top: 100px;
+  width: 80%;
   flex-wrap: wrap;
-  justify-content: space-between;
   margin-bottom: 20px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
 }
 .movie-container .movie {
   width: calc(33.33% - 10px);
   border: 1px solid #ccc;
   padding: 10px;
   box-sizing: border-box;
-  margin-bottom: 10px;
+  margin-right: 10px;
 }
 .movie-container .movie h2 {
   margin-top: 0;
@@ -69,4 +77,12 @@
 * {
   padding: 0;
   margin: 0;
+}
+
+.main-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-width: 100%;
 }/*# sourceMappingURL=app.css.map */
