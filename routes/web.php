@@ -1,6 +1,8 @@
 <?php
+
 use App\Http\Controllers\PagesController;
 use App\Http\Controllers\MoviesController;
+use App\Http\Controllers\ReviewsController;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -31,4 +33,4 @@ Route::get('/register', function () {
 });
 
 Route::get('/movies', [MoviesController::class, 'index'])->name('Movies.index');
-Route::get('/movies/{id}', [ReviewsController::class, 'show'])->name('reviews');
+Route::get('/movies/{id}', [MoviesController::class, 'show'])->name('reviews');

@@ -25,7 +25,7 @@
                 <p><strong>Runtime:</strong> {{ $movie->duration }} minutes</p>
                 <p><strong>Rating:</strong> {{ $movie->overall_rating }}</p>
                 <img src="{{ $movie->image_path }}" />
-                <p><a href="">View Reviews</a></p>
+                <p><a href="/movies/{{ $movie->id }}">View Reviews</a></p>
             </div>
             @endforeach
         </div>
