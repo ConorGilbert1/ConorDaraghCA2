@@ -22,6 +22,7 @@ class MoviesSeeder extends Seeder
                 'director' => 'Frank Darabont',
                 'duration' => 142,
                 'overall_rating' => 9.3,
+                'image_path' => 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQPZKaH89Gz3qldT4autrckeGwbE6L0Wca_SzgAR5X8ww&s'
             ],
             [
                 'title' => 'The Godfather',
@@ -29,6 +30,7 @@ class MoviesSeeder extends Seeder
                 'director' => 'Francis Ford Coppola',
                 'duration' => 175,
                 'overall_rating' => 9.2,
+                'image_path' => 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQlxzJYB-agG7aeOLNd0ds4ER1f43tu1EbWCQ&s'
             ],
             [
                 'title' => 'The Dark Knight',
@@ -36,6 +38,7 @@ class MoviesSeeder extends Seeder
                 'director' => 'Christopher Nolan',
                 'duration' => 152,
                 'overall_rating' => 9.0,
+                'image_path' => 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQpFRq5mjbpjTtcOj8_xLsGU2phwsJUeTWD0g&s'
             ],
             [
                 'title' => 'Pulp Fiction',
@@ -43,6 +46,7 @@ class MoviesSeeder extends Seeder
                 'director' => 'Quentin Tarantino',
                 'duration' => 154,
                 'overall_rating' => 8.9,
+                'image_path' => 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRuDbr20aqqdma05P7DhLUU1mScoNn0BbO0zA&s'
             ],
             [
                 'title' => 'The Matrix',
@@ -50,6 +54,7 @@ class MoviesSeeder extends Seeder
                 'director' => 'The Wachowskis',
                 'duration' => 136,
                 'overall_rating' => 8.7,
+                'image_path' => 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQFDNep3kOtOcRhsKxJ91mdkxUs25o2XxA7DmHI8Hfxx9NCEYcpFK2457lPgoZY118qp2k&usqp=CAU'
             ],
             [
                 'title' => 'Forrest Gump',
@@ -57,6 +62,7 @@ class MoviesSeeder extends Seeder
                 'director' => 'Robert Zemeckis',
                 'duration' => 142,
                 'overall_rating' => 8.8,
+                'image_path' => 'https://lh5.googleusercontent.com/proxy/4int_K6SjtXTvuhsLnfyTArrZh8taTrGupNOtImQGkdWZ_G-Tb5tOiE6dxptD9U4zPjUqkSm0t5ZXE_XBv37UuUjiEj9g9r-NxmasGY'
             ],
             [
                 'title' => 'Inception',
@@ -64,6 +70,7 @@ class MoviesSeeder extends Seeder
                 'director' => 'Christopher Nolan',
                 'duration' => 148,
                 'overall_rating' => 8.8,
+                'image_path' => 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ-6sCmXY-Kjv9IJoFff10oTbIOndGZGXBl1g&s'
             ],
             [
                 'title' => 'The Lord of the Rings: The Return of the King',
@@ -71,6 +78,7 @@ class MoviesSeeder extends Seeder
                 'director' => 'Peter Jackson',
                 'duration' => 201,
                 'overall_rating' => 8.9,
+                'image_path' => 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT22y9QI-eCxEOqbKfMvksq1cJGpMm2JtmSmg&s'
             ],
             [
                 'title' => 'The Lion King',
@@ -78,6 +86,7 @@ class MoviesSeeder extends Seeder
                 'director' => 'Roger Allers, Rob Minkoff',
                 'duration' => 88,
                 'overall_rating' => 8.5,
+                'image_path' => 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTkg20gK4Gu1jVhTM87CWiAC1EI5EUFL-kwfA&s'
             ],
             [
                 'title' => 'Schindler\'s List',
@@ -85,6 +94,7 @@ class MoviesSeeder extends Seeder
                 'director' => 'Steven Spielberg',
                 'duration' => 195,
                 'overall_rating' => 8.9,
+                'image_path' => 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcScWj4scwkn4muvLkZXMNOLj1T647YZrMf4ZA&s'
             ],
             [
                 'title' => 'Gladiator',
@@ -92,6 +102,8 @@ class MoviesSeeder extends Seeder
                 'director' => 'Ridley Scott',
                 'duration' => 155,
                 'overall_rating' => 8.5,
+                'image_path' => 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTJccTp5jY5ljPCBFP_SLzhA3hmv3R4ffrmbQ&s'
+
             ],
             [
                 'title' => 'Saving Private Ryan',
@@ -99,6 +111,7 @@ class MoviesSeeder extends Seeder
                 'director' => 'Steven Spielberg',
                 'duration' => 169,
                 'overall_rating' => 8.6,
+                'image_path' => 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTaSTctWXIXdHEEVvnmaCtlUYYUo4kIZLttBQ&s'
             ],
         ];
 
