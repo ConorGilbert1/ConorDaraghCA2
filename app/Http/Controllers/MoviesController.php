@@ -5,6 +5,7 @@ namespace App\Http\Controllers;
 use Illuminate\Http\Request;
 use App\Models\Movies;
 use App\Models\MovieReview;
+use App\Models\Actor;
 
 class MoviesController extends Controller
 {
@@ -24,6 +25,7 @@ class MoviesController extends Controller
 
         $movie = Movies::find($id);
         $reviews = MovieReview::where('movie_id', $id)->get();
-        return view('MovieDetails', compact('movie', 'reviews'));
+        $actors = Actor::where('movie_id', $id)->get();
+        return view('MovieDetails', compact('movie', 'reviews', 'actors'));
     }
 }

@@ -19,5 +19,6 @@ class DatabaseSeeder extends Seeder
 
         // Seed movie reviews
         $this->call(MovieReviewsSeeder::class);
+        $this->call(ActorSeeder::class);
     }
 }

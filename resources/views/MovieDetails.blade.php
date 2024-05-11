@@ -34,6 +34,13 @@
     </div>
    </div>
   </div>
+  @foreach($actors as $actor)
+  <div class="review">
+   <h2>{{ $actor->name }}</h2>
+   <img src="{{ $actor->image_path }}"> </img></p>
+  </div>
+  @endforeach
+
   @include('layouts.reviews')
 
 
