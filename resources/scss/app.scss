@@ -1,11 +1,14 @@
 @import 'config';
 @import 'nav';
 @import 'movies';
+@import 'movieDetails';
+@import 'reviews';
 @import 'footer';
+
 
 *{
  @include removePaddingMargin;
-    
+  font-family: "Trebuchet MS", sans-serif;
 }
 
 html,

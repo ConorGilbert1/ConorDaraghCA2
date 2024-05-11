@@ -73,6 +73,81 @@
   margin-top: 0;
 }
 
+.movie-details-container {
+  margin-top: 100px;
+  flex-grow: 1;
+}
+.movie-details-container .movie-details {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+.movie-details-container .movie-details-left-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.movie-details-container .movie-details-right-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.movie-details-container .movie-details-right-container .movie-rating-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.movie-details-container .movie-details-right-container .movie-rating-container .movie-imdb-rating {
+  font-size: large;
+  font-weight: 700;
+}
+.movie-details-container .movie-details-right-container .movie-rating-container .movie-rating {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+.movie-details-container .movie-details-right-container .movie-rating-container .movie-rating .fa-star {
+  color: #dbb128;
+  font-size: larger;
+  padding-right: 0.1rem;
+}
+.movie-details-container .movie-details-right-container .movie-rating-container .movie-rating .overall-rating {
+  font-size: large;
+  font-weight: bold;
+}
+.review-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  align-items: flex-start;
+  margin-top: 100px;
+  width: 50%;
+}
+.review-container .review-heading {
+  font-size: larger;
+  margin-bottom: 10px;
+}
+.review-container .review {
+  padding: 20px;
+  border-radius: 10px;
+  width: 100%;
+  background-color: #f5ebeb;
+  border: 1px solid #f5ebeb;
+  margin-bottom: 20px;
+}
+.review-container .review:hover {
+  background-color: white;
+  border: 1px solid black;
+  transform-style: flat;
+  transition-duration: 0.5s;
+}
+
 .footer-container {
   height: auto;
   display: flex;
@@ -83,12 +158,13 @@
   width: 100%;
   background-color: #333;
   color: white;
-  margin-top: 100px;
+  margin-top: 7vh;
 }
 .footer-container p {
   font-size: 50px;
 }
 .footer-container .footer-link-container {
+  margin-top: 30px;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -128,10 +204,47 @@
   justify-content: center;
   align-items: center;
 }
+.footer-container .footer-contact-container .contact-form {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  margin-top: 3vh;
+}
+.footer-container .footer-contact-container .contact-form input {
+  width: 100%;
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px;
+  height: 3vh;
+  outline: none;
+  border: none;
+  background-color: white;
+  padding: 0;
+  margin: 0;
+}
+.footer-container .footer-contact-container .contact-form button {
+  border-top-right-radius: 10px;
+  border-bottom-right-radius: 10px;
+  width: 20%;
+  height: 3vh;
+  border: none;
+  background-color: white;
+  padding: 0;
+  margin: 0;
+  cursor: pointer;
+}
+.footer-container .footer-contact-container .contact-form button:hover {
+  transform-style: flat;
+  transition-duration: 0.5s;
+  background-color: #f5ebeb;
+  color: white;
+}
 
 * {
   padding: 0;
   margin: 0;
+  font-family: "Trebuchet MS", sans-serif;
 }
 
 html,

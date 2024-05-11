@@ -5,12 +5,13 @@
  width: 100%;
  background-color: #333;
  color: white;
- margin-top: 100px;
+ margin-top: 7vh;
 p {
   font-size: 50px;
  }
 
 .footer-link-container {
+  margin-top:30px;
 @include flexColumnCenter;
 h3{
  font-size: 30px;
@@ -42,7 +43,41 @@ h3{
   }
 
 .footer-contact-container {
- @include flexColumnCenter
+ @include flexColumnCenter;
+
+.contact-form{
+  width : 100%;
+@include flexRowCenter;
+margin-top: 3vh;
+input {
+    width: 100%;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+    height: 3vh;
+    outline: none;
+    border: none;
+    background-color: white;
+    @include removePaddingMargin;
+  }
+
+  button {
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+    width: 20%;
+    height: 3vh;
+    border: none;
+    background-color: white;
+    @include removePaddingMargin;
+    cursor: pointer;
+   
+    &:hover{
+      @include hoverTransition;
+      background-color: $accent-color;
+      color: white;
+    }
+  }
+}
+
 }
 }
 

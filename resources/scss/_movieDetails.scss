@@ -1,0 +1,54 @@
+.movie-details-container{
+ margin-top: 100px;
+ flex-grow: 1;
+
+
+ .movie-details{
+  @include flexRowCenter;
+ }
+
+
+
+  .movie-details-left-container {
+   @include flexColumnCenter;
+
+
+  }
+ .movie-details-right-container {
+   @include flexColumnCenter;
+
+
+
+
+   .movie-rating-container{
+    @include flexColumnCenter;
+
+    .movie-imdb-rating{
+     font-size: large;
+     font-weight: 700;
+    }
+
+
+    .movie-rating {
+      @include flexRowCenter;
+
+     .fa-star{
+      color:$movie-rating-star-color;
+      font-size: larger;
+      padding-right: .1rem;
+     }
+
+     .overall-rating{
+      font-size: large;
+      font-weight: bold;
+     }
+
+     .overall-rating-scale{
+
+     }
+
+
+     }
+   }
+ }
+}

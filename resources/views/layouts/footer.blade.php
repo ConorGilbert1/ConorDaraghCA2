@@ -4,8 +4,6 @@
   <p>About us</p>
   <a href="#" class="">Link 1</a>
   <a href="#" class="">Link 2</a>
-  <a href="#" class="">Link 3</a>
-  <a href="#" class="">Link 4</a>
  </div>
  <div class="footer-socials-container">
   <p> Our Socials </p>
