@@ -9,30 +9,37 @@
    .nav-left-container {
      display: flex;
      align-items: center;
+    .left-ul-container{
+      padding: 2vh;
+      display: flex;
+
+    }
+      ul {
+          
+          list-style-type: none;
+          margin: 0;
+          padding: 0;
+      
+          li {
+            display: inline;
+      
+            a {
+              padding: 1rem;
+              color: #fff;
+              text-decoration: none;
+              font-size: 18px;
+              transition: 0.3s ease;
+      
+              &:hover {
+                background-color: #555;
+                border-radius: 5px;
+              }
+            }
+          }
+        }
    }
  
-   ul {
-     list-style-type: none;
-     margin: 0;
-     padding: 0;
- 
-     li {
-       display: inline;
- 
-       a {
-        padding: 1rem;
-         color: #fff;
-         text-decoration: none;
-         font-size: 18px;
-         transition: 0.3s ease;
- 
-         &:hover {
-           background-color: #555;
-           border-radius: 5px;
-         }
-       }
-     }
-   }
+  
  
    .login-button {
      background-color: #007bff;
@@ -45,11 +52,35 @@
    }
  
    .nav-right-container {
+    
+        .right-ul-container {
+          display: flex;
+          padding-right: 2vh;
+        }
 
-     ul {
-       display: flex;
-       align-items: center;
-     }
+      ul {
+          display: flex;
+          list-style-type: none;
+          margin: 1vh;
+          padding: 1vh;
+      
+          li {
+            display: inline;
+              margin: 1vh;
+            a {
+              padding: 1rem;
+              color: #fff;
+              text-decoration: none;
+              font-size: 18px;
+              transition: 0.3s ease;
+      
+              &:hover {
+                background-color: #555;
+                border-radius: 5px;
+              }
+            }
+          }
+        }
    }
 
 
