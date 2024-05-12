@@ -26,13 +26,13 @@ class ActorSeeder extends Seeder
     'name' => 'Tim Robbins',
     'character_name' => 'Andy Dufresne',
     'movie_id' => '1',
-    'image_path' => 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRqFbOcmzP0oGoi32yKq4WoBmNH95DkpdzxRg&s'
+    'image_path' => 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTvS-Jq8yy4gQ5RgR11iSHQgsMauUFOLb6-DXWCwf-m59_auttWlmlQlMVFtvh39vpETL0&usqp=CAU'
    ],
    [
     'name' => 'Bob Gunton',
     'character_name' => 'Warden Norton',
     'movie_id' => '1',
-    'image_path' => 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRqFbOcmzP0oGoi32yKq4WoBmNH95DkpdzxRg&s'
+    'image_path' => 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSzF-VTIniaMVqeAjdhV1UDUDPPMaOEFLOnfw&s'
    ],
   ];
 

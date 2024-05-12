@@ -19,6 +19,7 @@
   display: inline;
 }
 .nav-container ul li a {
+  padding: 1rem;
   color: #fff;
   text-decoration: none;
   font-size: 18px;
@@ -58,7 +59,6 @@
   align-items: center;
   flex-grow: 1;
   flex-wrap: wrap;
-  margin-top: 100px;
   width: 60%;
   margin-bottom: 20px;
 }
@@ -75,7 +75,7 @@
   border: 3px solid #aaaaaa;
   border-radius: 20px;
   width: 15rem;
-  height: 40vh;
+  height: 20vh;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 .movie-container .movie h2 {
@@ -221,7 +221,8 @@
   width: 50%;
 }
 .review-container .review-heading {
-  font-size: larger;
+  font-weight: bold;
+  font-size: 3vh;
   margin-bottom: 10px;
 }
 .review-container .review {
@@ -238,6 +239,18 @@
   transform-style: flat;
   transition-duration: 0.5s;
 }
+.review-container .review .review-text {
+  display: flex;
+  flex-direction: row;
+}
+.review-container .review .review-main-text {
+  font-weight: bold;
+  padding-right: 0.2rem;
+  font-size: 1.5vh;
+}
+.review-container .review .review-sub-text {
+  font-size: 1.5vh;
+}
 
 .footer-container {
   height: auto;
@@ -253,7 +266,7 @@
   padding-bottom: 7vh;
 }
 .footer-container p {
-  font-size: 50px;
+  font-size: 2vh;
 }
 .footer-container .footer-link-container {
   margin-top: 30px;
@@ -263,12 +276,12 @@
   align-items: center;
 }
 .footer-container .footer-link-container h3 {
-  font-size: 30px;
+  font-size: 1.5vh;
 }
 .footer-container .footer-link-container a {
   color: white;
   text-decoration: none;
-  font-size: 30px;
+  font-size: 1.5vh;
   margin: 0.5rem;
 }
 .footer-container .footer-socials-container {
@@ -287,7 +300,7 @@
 .footer-container .footer-socials-container .footer-socials-icons-container a {
   color: white;
   text-decoration: none;
-  font-size: 30px;
+  font-size: 1.5vh;
   margin: 0.5rem;
 }
 .footer-container .footer-contact-container {

@@ -4,9 +4,18 @@
    @foreach($reviews as $review)
    <div class="review">
      <h2>{{ $review->title }}</h2>
-     <p><strong>Author:</strong> {{ $review->username }}</p>
-     <p><strong>Review Text:</strong> {{ $review->review_text }}</p>
-     <p><strong>Rating:</strong> {{ $review->rating }}</p>
+     <div class="review-text">
+       <div class="review-main-text">Author: </div>
+       <div class="review-sub-text">{{ $review->username }}</div>
+     </div>
+     <div class="review-text">
+       <div class="review-main-text">Review Text: </div>
+       <div class="review-sub-text">{{ $review->review_text }}</div>
+     </div>
+     <div class="review-text">
+       <div class="review-main-text">Rating: </div>
+       <div class="review-sub-text"> {{ $review->rating }}</div>
+     </div>
    </div>
    @endforeach
 

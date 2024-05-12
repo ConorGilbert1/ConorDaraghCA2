@@ -5,7 +5,8 @@
  width: 50%;
 
 .review-heading {
- font-size: larger;
+ font-weight: bold;
+ font-size: 3vh;
  margin-bottom: 10px;
 }
 
@@ -22,5 +23,22 @@
   border: 1px solid black;
   @include hoverTransition;
  }
+
+
+
+  .review-text{
+   display: flex;
+   flex-direction: row;
+   
+  }
+  .review-main-text {
+   font-weight: bold;
+   padding-right: .2rem;
+   font-size: 1.5vh;
+  }
+  .review-sub-text {
+  font-size: 1.5vh; 
+  }
+
 }
 }
