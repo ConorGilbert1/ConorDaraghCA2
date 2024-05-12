@@ -28,4 +28,5 @@ class MoviesController extends Controller
         $actors = Actor::where('movie_id', $id)->get();
         return view('MovieDetails', compact('movie', 'reviews', 'actors'));
     }
+    
 }

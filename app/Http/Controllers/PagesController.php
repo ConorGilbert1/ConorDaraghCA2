@@ -22,4 +22,9 @@ class PagesController extends Controller
     {
         return view('register');
     }
+    public function movieList()
+    {
+        return view('MovieList');
+    }
+   
 }

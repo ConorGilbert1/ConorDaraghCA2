@@ -15,7 +15,8 @@
         <div class="movies-heading">
             Movies
         </div>
-
+        
+    
         <div class="movie-container">
             @foreach($movies as $movie)
             <div class="movie">
@@ -26,6 +27,7 @@
                 <p><strong>Rating:</strong> {{ $movie->overall_rating }}</p>
                 <img src="{{ $movie->image_path }}" />
                 <p><a href="/movies/{{ $movie->id }}">View Reviews</a></p>
+                
             </div>
             @endforeach
         </div>

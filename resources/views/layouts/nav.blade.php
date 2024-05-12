@@ -4,7 +4,7 @@
     <ul>
       <li><a href="/">Home</a></li>
       <li><a href="/movies">Movies</a></li>
-      <li><a href="/reviews">Reviews</a></li>
+      <li><a href="/MovieList">My List</a></li>
     </ul>
   </div>
   <div class="nav-centre-container"> <img class="logo" src="{{ asset('images/film_roll.png') }}" alt="Logo">
