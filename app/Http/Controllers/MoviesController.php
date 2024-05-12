@@ -28,4 +28,23 @@ class MoviesController extends Controller
         $actors = Actor::where('movie_id', $id)->get();
         return view('MovieDetails', compact('movie', 'reviews', 'actors'));
     }
+
+
+    public function destroy($id)
+    {
+        // Find the movie by its ID
+        $movie = Movies::find($id);
+
+        // Check if the movie exists
+        if (!$movie) {
+            // If the movie doesn't exist, redirect back with an error message
+            return redirect()->back()->with('error', 'Movie not found.');
+        }
+
+        // Delete the movie
+        $movie->delete();
+
+        // Redirect back to the movies index page with a success message
+        return redirect()->route('Movies.index')->with('success', 'Movie deleted successfully.');
+    }
 }

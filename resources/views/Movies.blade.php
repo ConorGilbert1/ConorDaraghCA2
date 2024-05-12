@@ -20,11 +20,21 @@
 
         <div class="movie-container">
             @foreach($movies as $movie)
-            <a class="movie" href="/movies/{{ $movie->id }}">
-                <div>
+            <div class="movie">
+                <a href=" /movies/{{ $movie->id }}">
                     <img src="{{ $movie->image_path }}" />
-                </div>
-            </a>
+                </a>
+                @if (Auth::user()->access_level == 2)
+                <form action="/movies/{{ $movie->id }}" method="POST">
+                    @csrf
+                    @method('DELETE')
+                    <button class="movie-del-button" type="submit"><i class="fa fa-trash" aria-hidden="true"></i></button>
+                </form>
+                @endif
+            </div>
+
+
+
             @endforeach
         </div>
 

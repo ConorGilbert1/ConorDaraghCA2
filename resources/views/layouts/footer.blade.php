@@ -15,7 +15,7 @@
   </div>
  </div>
  <div class="footer-contact-container">
-  <p> Contact Us </p>
+  <p> Subscribe to our Emails </p>
   <div class="contact-form">
    <input>
    <button class="contact-submit-btn"><i class="fa fa-sign-in"></i></button>

@@ -2,7 +2,7 @@
 
 use App\Http\Controllers\PagesController;
 use App\Http\Controllers\MoviesController;
-use App\Http\Controllers\ReviewsController;
+use App\Http\Controllers\MovieReviewsController;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -33,7 +33,14 @@ Route::get('/register', function () {
 });
 
 Route::get('/movies', [MoviesController::class, 'index'])->name('Movies.index');
-Route::get('/movies/{id}', [MoviesController::class, 'show'])->name('reviews');
+Route::get('/movies/{id}', [MoviesController::class, 'show'])->name('movies.show');
+Route::delete('/movies/{id}', [MoviesController::class, 'destroy'])->name('movies.destroy'); // Changed to use array syntax
+
+
 Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
+
+Route::resource('/review', MovieReviewsController::class);
+
+
 
 Auth::routes();

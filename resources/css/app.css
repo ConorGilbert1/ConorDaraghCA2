@@ -3,7 +3,7 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background-color: #f5ebeb;
+  background-color: #c24e0b;
   color: #fff;
 }
 .nav-container .nav-left-container {
@@ -106,6 +106,13 @@
 .movie-container .movie h2 {
   color: green;
   margin-top: 0;
+}
+.movie-container .movie .movie-del-button {
+  margin-top: 1vh;
+  border: none;
+  background-color: white;
+  font-size: 3vh;
+  color: red;
 }
 
 .movie-details-container {
@@ -254,8 +261,8 @@
   padding: 20px;
   border-radius: 10px;
   width: 100%;
-  background-color: #f5ebeb;
-  border: 1px solid #f5ebeb;
+  background-color: #c24e0b;
+  border: 1px solid #c24e0b;
   margin-bottom: 20px;
 }
 .review-container .review:hover {
@@ -274,7 +281,11 @@
   font-size: 1.5vh;
 }
 .review-container .review .review-sub-text {
+  color: white;
   font-size: 1.5vh;
+}
+.review-container .review .review-sub-text:hover {
+  color: #c24e0b;
 }
 
 .form-content-container {
@@ -378,7 +389,7 @@
 .footer-container .footer-socials-container .footer-socials-icons-container a {
   color: white;
   text-decoration: none;
-  font-size: 1.5vh;
+  font-size: 3vh;
   margin: 0.5rem;
 }
 .footer-container .footer-contact-container {
@@ -420,7 +431,7 @@
 .footer-container .footer-contact-container .contact-form button:hover {
   transform-style: flat;
   transition-duration: 0.5s;
-  background-color: #f5ebeb;
+  background-color: #c24e0b;
   color: white;
 }
 

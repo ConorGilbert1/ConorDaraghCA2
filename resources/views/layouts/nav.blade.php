@@ -4,7 +4,6 @@
       <ul>
         <li><a href="/">Home</a></li>
         <li><a href="/movies">Movies</a></li>
-        <li><a href="/reviews">Reviews</a></li>
       </ul>
     </div>
   </div>
@@ -16,9 +15,8 @@
     <div class="right-ul-container">
       <ul>
         @if (Auth::check())
-        @if (Auth::user()->access_level == 1)
-        <li class="nav-item dropdown">
-          <a id="navbarDropdown" class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false" v-pre>
+        @if (Auth::user()->access_level >= 1) <li class="nav-item dropdown">
+          <a id="navbarDropdown">
             {{ Auth::user()->name }}
           </a>
           <div>

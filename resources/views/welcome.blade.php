@@ -22,7 +22,7 @@
         </div>
         @endif
         <div class="welcome-container">
-            <h1>Welcome to Your Website</h1>
+            <h1>Home page</h1>
             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed aliquam nisl id metus pulvinar, vitae consectetur lectus sodales. Mauris eget justo ut enim commodo faucibus.</p>
             <p>Nulla facilisi. Vivamus vehicula, ex at vestibulum tincidunt, justo lorem pellentesque nunc, id suscipit risus neque a turpis.</p>
         </div>
