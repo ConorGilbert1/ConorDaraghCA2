@@ -1,0 +1,94 @@
+//Main Colors
+$primary-color: #282828;
+$accent-color: #c24e0b;
+$button-hover-color: #303030;
+$review-color: #ffffff;
+
+//Nav Colors
+$nav-color: #2c4faf;
+$nav-link-color: #2c4faf;
+
+
+//MovieBox Colors
+$movie-background-color:#303030; 
+$movie-border-color: #aaaaaa;
+$movie-text-color: #ffffff; 
+
+
+
+//MovieDetail Colors
+$movie-rating-star-color: #e9cc6e;
+$movie-rating-color: #ffffff;
+$movie-rating-sub-color: #aaaaaa;
+$movie-details-border-color: #4e4e4e;
+$movie-details-main-text-color: #ffffff;
+$movie-details-sub-text-color: #A9EFEE;
+$imdb-rating-color:#e9cc6e;
+//MovieDetail Sizes
+$movie-rating-star-size: 1.6rem;
+$movie-rating-size: 1.6rem;
+$movie-rating-sub-size: 1.4rem;
+$movie-details-main-text-size: 1.6rem;
+$movie-details-sub-text-size: 1.6rem;
+
+//Actor Colors
+$actor-name-color: #ffffff;
+$actor-character-name-color: #aaaaaa;
+//Actor Sizes
+$actor-name-size: 1.3rem;
+$actor-character-name-size: 1rem;
+$actor-image-width: 100px;
+$actor-image-height: 100px;
+
+
+
+//Screen Sizes
+$mobile: 500px;
+$tablet-min: 500px;
+$tablet-max: 1000px;
+
+
+//Mixins
+@mixin homeContentSettings {
+ display: flex;
+ flex-direction: row;
+ justify-content: center;
+ align-items: center;
+ margin-top: 100px;
+}
+
+@mixin flexColumnCenter {
+ display: flex;
+ flex-direction: column;
+ justify-content: center;
+ align-items: center;
+}
+
+@mixin flexRowCenter {
+ display: flex;
+ flex-direction: row;
+ justify-content: center;
+ align-items: center;
+}
+
+@mixin removePaddingMargin {
+ padding: 0;
+ margin: 0;
+}
+
+@mixin hoverTransition {
+ transform-style: flat;
+ transition-duration: .5s;
+}
+
+@mixin mobile {
+ @media (max-width: $mobile) {
+  @content;
+ }
+}
+
+@mixin tablet {
+ @media (min-width: $tablet-min) and (max-width:$tablet-max) {
+  @content;
+ }
+}

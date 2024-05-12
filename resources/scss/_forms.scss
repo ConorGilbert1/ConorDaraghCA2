@@ -1,0 +1,53 @@
+.form-content-container{
+ flex-grow: 1;
+ width: 60%;
+ 
+ @include flexColumnCenter;
+
+.form-header {
+ border-radius: 10vh;
+ display: flex;
+ justify-content: center;
+ color: white;
+ background-color: $primary-color;
+ width: 10%;
+  font-size: 2vh;
+  font-weight: bold;
+  padding: 2vh;
+  margin-bottom: 1vh;
+ }
+
+.form-container{
+  border-radius: 1vh;
+ padding: 2rem;
+ @include flexColumnCenter;
+ width: 30%;
+  background-color: $primary-color;
+
+  .form-input-container {
+  
+   @include flexRowCenter;
+    width: 100%;
+
+    input{
+     width: 100%;
+     margin-bottom: 1vh;
+    }
+
+    label{
+     padding-right: .4vh;
+    }
+   }
+        .form-checkbox-container {
+         color: white;
+         width: 100%;
+         margin-bottom: 1vh;
+    
+         label {
+          padding-right: .4vh;
+         }
+        }
+}
+
+
+}
