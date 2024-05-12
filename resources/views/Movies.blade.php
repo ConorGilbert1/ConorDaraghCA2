@@ -16,19 +16,17 @@
             Movies
         </div>
 
+
         <div class="movie-container">
             @foreach($movies as $movie)
-            <div class="movie">
-                <h2>{{ $movie->title }}</h2>
-                <p><strong>Release Date:</strong> {{ $movie->release_date }}</p>
-                <p><strong>Director:</strong> {{ $movie->director }}</p>
-                <p><strong>Runtime:</strong> {{ $movie->duration }} minutes</p>
-                <p><strong>Rating:</strong> {{ $movie->overall_rating }}</p>
-                <img src="{{ $movie->image_path }}" />
-                <p><a href="/movies/{{ $movie->id }}">View Reviews</a></p>
-            </div>
+            <a class="movie" href="/movies/{{ $movie->id }}">
+                <div>
+                    <img src="{{ $movie->image_path }}" />
+                </div>
+            </a>
             @endforeach
         </div>
+
 
 
         @include('layouts.footer')
