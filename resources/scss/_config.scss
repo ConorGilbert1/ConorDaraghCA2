@@ -4,21 +4,38 @@ $accent-color: #f5ebeb;
 $button-hover-color: #303030;
 $review-color: #ffffff;
 
-//Home Colors
-$content-color1: #A9EFEE;
-$content-color2: #0000EE;
-$content-color3: #dd911e;
-
 //Nav Colors
 $nav-color: #2c4faf;
 $nav-link-color: #2c4faf;
 
 
 //MovieDetail Colors
-$movie-rating-star-color: #dbb128;
+$movie-rating-star-color: #e9cc6e;
+$movie-rating-color: #ffffff;
+$movie-rating-sub-color: #aaaaaa;
+$movie-details-border-color: #4e4e4e;
+$movie-details-main-text-color: #ffffff;
+$movie-details-sub-text-color: #A9EFEE;
+$imdb-rating-color:#e9cc6e;
+//MovieDetail Sizes
+$movie-rating-star-size: 1.6rem;
+$movie-rating-size: 1.6rem;
+$movie-rating-sub-size: 1.4rem;
+$movie-details-main-text-size: 1.6rem;
+$movie-details-sub-text-size: 1.6rem;
+
+//Actor Colors
+$actor-name-color: #ffffff;
+$actor-character-name-color: #aaaaaa;
+//Actor Sizes
+$actor-name-size: 1.3rem;
+$actor-character-name-size: 1rem;
+$actor-image-width: 100px;
+$actor-image-height: 100px;
 
 
-//Sizes
+
+//Screen Sizes
 $mobile: 500px;
 $tablet-min: 500px;
 $tablet-max: 1000px;

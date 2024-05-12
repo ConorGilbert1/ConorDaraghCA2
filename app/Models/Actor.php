@@ -16,6 +16,7 @@ class Actor extends Model
  protected $fillable = [
   'movie_id',
   'name',
+  'character_name',
   'image_path',
  ];
 }

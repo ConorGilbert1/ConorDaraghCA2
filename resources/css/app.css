@@ -76,6 +76,9 @@
 .movie-details-container {
   margin-top: 100px;
   flex-grow: 1;
+  background-color: #282828;
+  width: 50%;
+  border-radius: 1vh;
 }
 .movie-details-container .movie-details {
   display: flex;
@@ -84,42 +87,120 @@
   align-items: center;
 }
 .movie-details-container .movie-details-left-container {
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 40%;
+}
+.movie-details-container .movie-details-left-container .movie-details-text {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  margin-top: 0.5rem;
+  width: 100%;
+  border-top: 1px solid #4e4e4e;
+}
+.movie-details-container .movie-details-left-container .movie-details-text .movie-details-main-text {
+  padding-right: 0.3rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: #ffffff;
+  font-size: 1.6rem;
+}
+.movie-details-container .movie-details-left-container .movie-details-text .movie-details-sub-text {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: #A9EFEE;
+  font-size: 1.6rem;
+}
+.movie-details-container .movie-details-left-container .movie-rating-container {
+  width: 100%;
+  border-top: 1px solid #4e4e4e;
+  margin-top: 0.5rem;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
 }
-.movie-details-container .movie-details-right-container {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-}
-.movie-details-container .movie-details-right-container .movie-rating-container {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-}
-.movie-details-container .movie-details-right-container .movie-rating-container .movie-imdb-rating {
-  font-size: large;
+.movie-details-container .movie-details-left-container .movie-rating-container .movie-imdb-rating {
+  color: #e9cc6e;
+  font-size: 1.6rem;
   font-weight: 700;
 }
-.movie-details-container .movie-details-right-container .movie-rating-container .movie-rating {
+.movie-details-container .movie-details-left-container .movie-rating-container .movie-rating {
   display: flex;
   flex-direction: row;
   justify-content: center;
   align-items: center;
 }
-.movie-details-container .movie-details-right-container .movie-rating-container .movie-rating .fa-star {
-  color: #dbb128;
-  font-size: larger;
+.movie-details-container .movie-details-left-container .movie-rating-container .movie-rating .fa-star {
+  color: #e9cc6e;
+  font-size: 1.6rem;
   padding-right: 0.1rem;
 }
-.movie-details-container .movie-details-right-container .movie-rating-container .movie-rating .overall-rating {
-  font-size: large;
+.movie-details-container .movie-details-left-container .movie-rating-container .movie-rating .overall-rating {
+  color: #ffffff;
+  font-size: 1.6rem;
   font-weight: bold;
 }
+.movie-details-container .movie-details-left-container .movie-rating-container .movie-rating .overall-rating-scale {
+  color: #aaaaaa;
+  font-size: 1.4rem;
+}
+.movie-details-container .movie-details-right-container {
+  width: 60%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.actors-heading {
+  color: #ffffff;
+  font-size: 3vh;
+  font-weight: bold;
+  margin-bottom: 3vh;
+}
+
+.actor-container {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  background-color: #282828;
+  justify-content: space-evenly;
+}
+.actor-container .actor {
+  cursor: pointer;
+  width: 30%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.actor-container .actor .actor-image {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+}
+.actor-container .actor .actor-name {
+  font-size: 1.3rem;
+  color: #ffffff;
+}
+.actor-container .actor .actor-character-name {
+  font-size: 1rem;
+  color: #aaaaaa;
+}
+
 .review-container {
   display: flex;
   flex-direction: column;

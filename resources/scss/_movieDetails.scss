@@ -1,54 +1,91 @@
 .movie-details-container{
  margin-top: 100px;
  flex-grow: 1;
+ background-color: $primary-color;
+ width: 50%;
+ border-radius: 1vh;
 
 
  .movie-details{
   @include flexRowCenter;
+
  }
 
 
 
   .movie-details-left-container {
-   @include flexColumnCenter;
+    padding: 1rem;
+    @include flexColumnCenter;
+    width: 40%;
+   .movie-details-text{
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    margin-top: .5rem;
+    width: 100%;
+    border-top: 1px solid $movie-details-border-color;
 
+    .movie-details-main-text{
+      padding-right: .3rem;
+      @include flexColumnCenter;
+      color: $movie-details-main-text-color;
+      font-size: $movie-details-main-text-size;
+
+    }
+  .movie-details-sub-text {
+    @include flexColumnCenter;
+    color: $movie-details-sub-text-color;
+    font-size: $movie-details-sub-text-size;
+  }
+
+   }
+  .movie-rating-container {
+    width: 100%;
+    border-top: 1px solid $movie-details-border-color;
+    margin-top: .5rem;
+      @include flexColumnCenter;
+  
+      .movie-imdb-rating {
+        color: $imdb-rating-color;
+        font-size: $movie-rating-size;
+        font-weight: 700;
+      }
+  
+  
+      .movie-rating {
+        @include flexRowCenter;
+  
+        .fa-star {
+          color: $movie-rating-star-color;
+          font-size: $movie-rating-star-size;
+          padding-right: .1rem;
+        }
+  
+        .overall-rating {
+          color:$movie-rating-color;
+          font-size:  $movie-rating-size;
+          font-weight: bold;
+        }
+  
+        .overall-rating-scale {
+          color: $movie-rating-sub-color;
+          font-size: $movie-rating-sub-size;
+        }
+  
+  
+      }
+    }
 
   }
  .movie-details-right-container {
+   width: 60%;
    @include flexColumnCenter;
+   justify-content: space-between;
+
+ 
 
 
 
-
-   .movie-rating-container{
-    @include flexColumnCenter;
-
-    .movie-imdb-rating{
-     font-size: large;
-     font-weight: 700;
-    }
-
-
-    .movie-rating {
-      @include flexRowCenter;
-
-     .fa-star{
-      color:$movie-rating-star-color;
-      font-size: larger;
-      padding-right: .1rem;
-     }
-
-     .overall-rating{
-      font-size: large;
-      font-weight: bold;
-     }
-
-     .overall-rating-scale{
-
-     }
-
-
-     }
-   }
+ 
  }
 }

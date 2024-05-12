@@ -12,6 +12,7 @@ class CreateActorsTable extends Migration
             $table->id();
             $table->foreignId('movie_id')->constrained()->onDelete('cascade');
             $table->string('name');
+            $table->string('character_name');
             $table->string('image_path');
             $table->timestamps();
         });
