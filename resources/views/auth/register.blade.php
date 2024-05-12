@@ -54,7 +54,7 @@
 
                     <div class="form-input-container">
 
-                        <input placeholder="Confirm password" id="password-confirm" type="password" class="form-control">
+                        <input placeholder="Confirm password" id="password-confirm" type="password" name="password_confirmation" class="form-control">
                     </div>
 
                     <div class="form-submit-container">
