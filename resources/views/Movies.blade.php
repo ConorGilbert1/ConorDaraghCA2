@@ -24,10 +24,7 @@
                 <a href=" /movies/{{ $movie->id }}">
                     <img src="{{ $movie->image_path }}" />
                 </a>
-<<<<<<< HEAD
                 @if(Auth::user())
-=======
->>>>>>> ad36c09437bd941ca4882e2252ab3b67e467b2bc
                 @if (Auth::user()->access_level == 2)
                 <form action="/movies/{{ $movie->id }}" method="POST">
                     @csrf
@@ -35,10 +32,7 @@
                     <button class="movie-del-button" type="submit"><i class="fa fa-trash" aria-hidden="true"></i></button>
                 </form>
                 @endif
-<<<<<<< HEAD
                 @endif
-=======
->>>>>>> ad36c09437bd941ca4882e2252ab3b67e467b2bc
             </div>
 
 
