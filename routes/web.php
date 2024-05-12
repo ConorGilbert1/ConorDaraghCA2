@@ -34,3 +34,6 @@ Route::get('/register', function () {
 
 Route::get('/movies', [MoviesController::class, 'index'])->name('Movies.index');
 Route::get('/movies/{id}', [MoviesController::class, 'show'])->name('reviews');
+Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
+
+Auth::routes();

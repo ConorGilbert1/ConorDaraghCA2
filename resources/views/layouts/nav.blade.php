@@ -1,19 +1,45 @@
 <div class="nav-container">
   <div class="nav-left-container">
-
     <ul>
       <li><a href="/">Home</a></li>
       <li><a href="/movies">Movies</a></li>
       <li><a href="/reviews">Reviews</a></li>
     </ul>
   </div>
-  <div class="nav-centre-container"> <img class="logo" src="{{ asset('images/film_roll.png') }}" alt="Logo">
+  <div class="nav-centre-container">
+    <img class="logo" src="{{ asset('images/film_roll.png') }}" alt="Logo">
   </div>
 
   <div class="nav-right-container">
     <ul>
-      <li><a href="/login" class="login-button">Login</a></li>
-      <li><a href="/register" class="login-button">Register</a></li>
+      @if (Auth::check())
+      @if (Auth::user()->access_level == 1)
+      <li class="nav-item dropdown">
+        <a id="navbarDropdown" class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false" v-pre>
+          {{ Auth::user()->name }}
+        </a>
+        <div>
+          <a href="{{ route('logout') }}" onclick="event.preventDefault();
+                                document.getElementById('logout-form').submit();">
+            {{ __('Logout') }}
+          </a>
+          <form id="logout-form" action="{{ route('logout') }}" method="POST" class="d-none">
+            @csrf
+          </form>
+        </div>
+      </li>
+      @else <!-- For regular users -->
+      <li><a href="{{ route('logout') }}" onclick="event.preventDefault();
+                        document.getElementById('logout-form').submit();">{{ __('Logout') }}</a></li>
+      @endif
+      @else <!-- For guests -->
+      @if (Route::has('login'))
+      <li class="nav-item"><a class="nav-link" href="{{ route('login') }}">{{ __('Login') }}</a></li>
+      @endif
+      @if (Route::has('register'))
+      <li class="nav-item"><a class="nav-link" href="{{ route('register') }}">{{ __('Register') }}</a></li>
+      @endif
+      @endif
     </ul>
   </div>
 </div>

@@ -9,13 +9,18 @@
     <title>Your Website</title>
     @vite('resources/js/app.js')
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <meta name="csrf-token" content="{{ csrf_token() }}">
 
 </head>
 
 <body>
     <div class="main-container">
         @include('layouts.nav')
-
+        @if (session('status'))
+        <div class="alert alert-success" role="alert">
+            {{ session('status') }}
+        </div>
+        @endif
         <div class="welcome-container">
             <h1>Welcome to Your Website</h1>
             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed aliquam nisl id metus pulvinar, vitae consectetur lectus sodales. Mauris eget justo ut enim commodo faucibus.</p>

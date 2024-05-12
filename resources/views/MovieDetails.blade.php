@@ -7,6 +7,7 @@
   <title> {{ $movie->title }}</title>
   @vite('resources/js/app.js')
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <meta name="csrf-token" content="{{ csrf_token() }}">
 </head>
 
 <body>
@@ -18,7 +19,8 @@
 
     <div class="movie-details-container">
       <div class="movie-details">
-        <div class="movie-details-left-container"> <img src="{{ $movie->image_path }}" />
+        <div class="movie-details-left-container">
+          <img src="{{ $movie->image_path }}" />
           <div class="movie-rating-container">
             <div class="movie-imdb-rating"> IMDb RATING </div>
             <div class="movie-rating">

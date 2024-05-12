@@ -17,6 +17,7 @@
     padding: 1rem;
     @include flexColumnCenter;
     width: 40%;
+    
    .movie-details-text{
     display: flex;
     flex-direction: row;
@@ -25,6 +26,7 @@
     width: 100%;
     border-top: 1px solid $movie-details-border-color;
 
+  
     .movie-details-main-text{
       padding-right: .3rem;
       @include flexColumnCenter;
