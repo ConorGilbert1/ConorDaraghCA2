@@ -16,6 +16,9 @@
         <div class="movies-heading">
             Movies
         </div>
+       
+              
+
 
 
         <div class="movie-container">
@@ -26,11 +29,17 @@
                 </a>
                 @if(Auth::user())
                 @if (Auth::user()->access_level == 2)
+                <a href=" /create"> <i class="fa fa-plus" aria-hidden="true"></i>
+                </a>
+              
                 <form action="/movies/{{ $movie->id }}" method="POST">
                     @csrf
                     @method('DELETE')
                     <button class="movie-del-button" type="submit"><i class="fa fa-trash" aria-hidden="true"></i></button>
                 </form>
+
+                <a href="/movies/edit/{{ $movie->id }}"><i class="fa fa-edit" aria-hidden="true"></i>
+                </a>
                 @endif
                 @endif
             </div>

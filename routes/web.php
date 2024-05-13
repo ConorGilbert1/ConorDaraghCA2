@@ -34,7 +34,11 @@ Route::get('/register', function () {
 
 Route::get('/movies', [MoviesController::class, 'index'])->name('Movies.index');
 Route::get('/movies/{id}', [MoviesController::class, 'show'])->name('movies.show');
-Route::delete('/movies/{id}', [MoviesController::class, 'destroy'])->name('movies.destroy'); // Changed to use array syntax
+Route::delete('/movies/{id}', [MoviesController::class, 'destroy'])->name('movies.destroy'); 
+Route::get('/create', [MoviesController::class, 'create'])->name('create');
+Route::get('/movies/edit/{id}', [MoviesController::class, 'edit'])->name('edit');
+Route::post('/movies', [MoviesController::class, 'store'])->name('movies.store');
+Route::put('/movies/{movie}', [MoviesController::class, 'update'])->name('movies.update');
 
 
 Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');

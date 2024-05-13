@@ -318,6 +318,20 @@
   width: 30%;
   background-color: #282828;
 }
+.form-content-container .form-container .group-container {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  align-items: flex-starts;
+}
+.form-content-container .form-container .group-container input {
+  width: 100%;
+}
+.form-content-container .form-container .reglog-label {
+  color: white;
+}
 .form-content-container .form-container .form-input-container {
   display: flex;
   flex-direction: row;
@@ -339,6 +353,67 @@
 }
 .form-content-container .form-container .form-checkbox-container label {
   padding-right: 0.4vh;
+}
+.form-content-container .reglog-form-container {
+  border-radius: 1vh;
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 60%;
+  background-color: #282828;
+}
+.form-content-container .reglog-form-container .group-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  padding-bottom: 2vh;
+}
+.form-content-container .reglog-form-container .form-input-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+.form-content-container .reglog-form-container .form-input-container input {
+  width: 100%;
+  margin-bottom: 1vh;
+}
+.form-content-container .reglog-form-container .form-input-container label {
+  padding-right: 0.4vh;
+}
+.form-content-container .reglog-form-container .form-checkbox-container {
+  color: white;
+  width: 100%;
+  margin-bottom: 1vh;
+}
+.form-content-container .reglog-form-container .form-checkbox-container label {
+  padding-right: 0.4vh;
+}
+
+.reglog-label {
+  color: white;
+}
+
+.reglog-input {
+  width: 100%;
+}
+
+.btn-div {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  width: auto;
+}
+.btn-div button {
+  border: none;
+  padding: 1vh;
+  border-radius: 2vh;
 }
 
 .footer-container {
