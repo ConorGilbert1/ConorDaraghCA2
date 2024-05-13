@@ -1,0 +1,35 @@
+ .actors-heading {
+  color: $movie-details-main-text-color;
+  font-size: 3vh;
+  font-weight: bold;
+  margin-bottom: 3vh;
+ }
+
+
+.actor-container{
+ width:100%;
+ @include flexRowCenter;
+ flex-wrap: wrap;
+ background-color: $primary-color;
+ justify-content: space-evenly;
+ .actor {
+  cursor: pointer;
+  width: 30%;
+  @include flexColumnCenter;
+  .actor-image{
+   width: $actor-image-width;
+   height: $actor-image-height;
+   border-radius: 50%;
+  }
+
+ .actor-name {
+  font-size: $actor-name-size;
+  color:$actor-name-color;
+ }
+ .actor-character-name {
+  font-size: $actor-character-name-size;
+  color: $actor-character-name-color;
+ }
+ }
+}
+

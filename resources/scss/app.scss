@@ -1,10 +1,32 @@
 @import 'config';
 @import 'nav';
+@import 'movies';
+@import 'movieDetails';
+@import 'actors';
+@import 'reviews';
+@import 'forms';
+@import 'footer';
 
 
 *{
  @include removePaddingMargin;
- background-color: $primary-color;
+  font-family: "Trebuchet MS", sans-serif;
+}
+
+html,
+body {
+ height: 100%;
+ margin: 0;
+}
+
+.main-container{
+ @include flexColumnCenter;
+ min-width: 100%;
+ min-height: 100%;
+
 }
 
 
+.welcome-container{
+ flex-grow: 1;
+}

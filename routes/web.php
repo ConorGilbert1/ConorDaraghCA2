@@ -1,6 +1,8 @@
 <?php
+
 use App\Http\Controllers\PagesController;
 use App\Http\Controllers\MoviesController;
+use App\Http\Controllers\MovieReviewsController;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -20,5 +22,29 @@ Route::get('/', function () {
 Route::get('/movies', function () {
     return view('movies');
 });
+Route::get('/reviews', function () {
+    return view('reviews');
+});
+Route::get('/login', function () {
+    return view('login');
+});
+Route::get('/register', function () {
+    return view('register');
+});
+
 Route::get('/movies', [MoviesController::class, 'index'])->name('Movies.index');
-Route::get('/movies/{id}', [ReviewsController::class, 'show'])->name('reviews');
+Route::get('/movies/{id}', [MoviesController::class, 'show'])->name('movies.show');
+Route::delete('/movies/{id}', [MoviesController::class, 'destroy'])->name('movies.destroy'); 
+Route::get('/create', [MoviesController::class, 'create'])->name('create');
+Route::get('/movies/edit/{id}', [MoviesController::class, 'edit'])->name('edit');
+Route::post('/movies', [MoviesController::class, 'store'])->name('movies.store');
+Route::put('/movies/{movie}', [MoviesController::class, 'update'])->name('movies.update');
+
+
+Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
+
+Route::resource('/review', MovieReviewsController::class);
+
+
+
+Auth::routes();

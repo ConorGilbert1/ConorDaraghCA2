@@ -1,32 +1,99 @@
 .nav-container {
- background-color: $nav-color;
- @include flexRowCenter;
- justify-content: space-evenly;
-}
+   width: 100%;
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+   background-color: $accent-color;
+   color: #fff;
+ 
+   .nav-left-container {
+     display: flex;
+     align-items: center;
+    .left-ul-container{
+      padding: 2vh;
+      display: flex;
 
-.nav-left-container{
- @include flexRowCenter;
- background-color: $nav-color;
- ul{
-    @include flexRowCenter;
-    color: white;
-    list-style-type: none;
-    text-decoration: none;
-
-    a{
-     text-decoration: none;
-     color: white;
-     background-color: $nav-color;
     }
+      ul {
+          
+          list-style-type: none;
+          margin: 0;
+          padding: 0;
+      
+          li {
+            display: inline;
+      
+            a {
+              padding: 1rem;
+              color: #fff;
+              text-decoration: none;
+              font-size: 18px;
+              transition: 0.3s ease;
+      
+              &:hover {
+                background-color: #555;
+                border-radius: 5px;
+              }
+            }
+          }
+        }
+   }
+ 
+  
+ 
+   .login-button {
+     background-color: #007bff;
+     border-radius: 5px;
+     font-size: 18px;
+ 
+     &:hover {
+       background-color: #0056b3;
+     }
+   }
+ 
+   .nav-right-container {
+    
+        .right-ul-container {
+          display: flex;
+          padding-right: 2vh;
+        }
+
+      ul {
+          display: flex;
+          list-style-type: none;
+          margin: 1vh;
+          padding: 1vh;
+      
+          li {
+            display: inline;
+              margin: 1vh;
+            a {
+              padding: 1rem;
+              color: #fff;
+              text-decoration: none;
+              font-size: 18px;
+              transition: 0.3s ease;
+      
+              &:hover {
+                background-color: #555;
+                border-radius: 5px;
+              }
+            }
+          }
+        }
+   }
+
+
+
+ .nav-centre-container {
+.logo {
+      width: 150px; 
+      height: 100PX;
+   }
+ 
  }
-}
 
 
-.nav-center-container {
- background-color: $nav-color;
-}
 
 
-.nav-right-container {
- background-color: $nav-color;
-}
+ }

@@ -14,4 +14,12 @@ class PagesController extends Controller
     {
         return view('movies');
     }
+    public function login()
+    {
+        return view('login');
+    }
+    public function register()
+    {
+        return view('register');
+    }
 }

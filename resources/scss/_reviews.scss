@@ -1,0 +1,49 @@
+.review-container{
+ @include flexColumnCenter;
+ align-items: flex-start;
+ margin-top: 100px;
+ width: 50%;
+
+.review-heading {
+ font-weight: bold;
+ font-size: 3vh;
+ margin-bottom: 10px;
+}
+
+.review{
+ padding: 20px;
+ border-radius: 10px;;
+ width: 100%;
+ background-color: $accent-color;
+ border: 1px solid $accent-color;
+ margin-bottom: 20px;
+
+ &:hover{
+  background-color: white;
+  border: 1px solid black;
+  @include hoverTransition;
+ }
+
+
+
+  .review-text{
+   display: flex;
+   flex-direction: row;
+   
+  }
+  .review-main-text {
+   font-weight: bold;
+   padding-right: .2rem;
+   font-size: 1.5vh;
+  }
+  .review-sub-text {
+    color: white;
+  font-size: 1.5vh; 
+    &:hover {
+      color: $accent-color;
+    }
+  }
+
+
+}
+}

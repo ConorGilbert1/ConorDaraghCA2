@@ -1,0 +1,41 @@
+
+.movies-heading {
+    margin-top: 100px;
+    font-size: 40px;
+    font-weight: bold;
+}
+
+.movie-container {
+    @include flexRowCenter;
+    flex-grow: 1;
+    flex-wrap: wrap;
+    width: 60%;
+    margin-bottom: 20px;
+ 
+    .movie {
+        @include flexColumnCenter;
+        flex: 0 0 auto;
+        text-decoration: none;
+        margin: 10vh;
+        img{
+            border: 3px solid $movie-border-color;
+            border-radius: 20px;
+            width: 15rem;
+            height: 20vh;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        
+        }
+        h2 {
+            color: green;
+            margin-top: 0;
+        }
+
+        .movie-del-button{
+            margin-top: 1vh;
+            border: none;
+            background-color: white;
+            font-size: 3vh;
+            color: red;
+        }
+    }
+}
