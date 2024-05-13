@@ -17,8 +17,13 @@
             Movies
         </div>
        
-              
+        @if(Auth::user())
+                @if (Auth::user()->access_level == 2)
+                <a href=" /create"> <i class="fa fa-plus" aria-hidden="true">Add Movie</i>
+                </a>
 
+                @endif
+                @endif
 
 
         <div class="movie-container">
